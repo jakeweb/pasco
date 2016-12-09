@@ -1,0 +1,14 @@
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+.text-gray {
+    color: $medium-gray;
+}
+
+
+.valign-abs {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}

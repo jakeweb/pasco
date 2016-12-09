@@ -1,0 +1,12 @@
+.header {
+	position: relative;
+	&.header_dark {
+		background: $black-light;
+		color: $gray;
+	}
+	&.header_sm {
+		padding: 0.78rem 0;
+		font-size: 1.2em;
+	}
+
+}

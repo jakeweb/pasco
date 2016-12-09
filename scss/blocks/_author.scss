@@ -1,0 +1,27 @@
+.author {
+    
+    &.author_white {
+        .author__name {
+            color: $white;
+        }
+    }
+}
+
+.author__avatar {
+    display: inline-block;
+    margin: 20px 10px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.author__name {
+    font-size: 1rem;
+    font-weight: bold;
+    line-height: 1;
+}
+
+.author__date {
+    font-size: 0.85rem;
+    color: $dark-gray;
+    line-height: 1;
+}

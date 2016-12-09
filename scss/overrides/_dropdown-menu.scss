@@ -3,9 +3,9 @@
         position: absolute;
         top: $menu-item-padding-top*1.1;
         right: $menu-item-padding-side;
-        content: "\f107";
-        font-weight: bold;
-        font-family: 'FontAwesome';
         border: none;
+        font-family: 'FontAwesome';
+        font-weight: bold;
+        content: "\f107";
     }
 }

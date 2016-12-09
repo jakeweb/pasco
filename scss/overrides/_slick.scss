@@ -1,0 +1,57 @@
+.slick-slider {
+    position: relative;
+    height: 100%;
+    margin: 0;
+}
+
+.slider {
+    cursor: auto;
+}
+
+.slick-slide {
+    position: relative;
+    .slider__img {
+        width: 100%;
+    }
+}
+
+.slick-prev,
+.slick-next {
+    width: 25px;
+    height: 25px;
+    z-index: 5;
+}
+
+.slick-prev:before,
+.slick-next:before {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.slick-prev {
+    left: 40px;
+}
+
+.slick-next {
+    right: 40px;
+}
+
+.slider__caption {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    background: $stick-caption-bg;
+    text-align: center;
+}
+
+.title {
+    font-size: 42px;
+    margin-bottom: 1em;
+    text-transform: uppercase;
+    font-weight: bold;
+    line-height: 1;
+    color: $white;
+}

@@ -1,9 +1,11 @@
 .menu {
+    color: $white;
     .menu__item {
         vertical-align: baseline;
         text-transform: uppercase;
         a {
             display: inline-block;
+            color: $white;
         }
         &.active > a {
             border-bottom: 4px solid $pink;
@@ -19,5 +21,28 @@
         > .menu__item {
             display: inline-block;
         }
+    }
+    &.menu_upper {
+        position: absolute;
+        width: 100%;
+        z-index: 1;
+    }
+}
+
+.site-name {
+    font-size: 1.71rem;
+    font-weight: bold;
+    color: $white;
+    text-transform: uppercase;
+}
+
+.icon {
+    display: inline-block;
+    padding: 5px;
+    font-size: 1em;
+    &.icon_bordered:not(:first-child) {
+        padding-left: 13px;
+        padding-right: 13px;
+        border-left: 1px solid #5c5c5b;
     }
 }
