@@ -21,13 +21,7 @@ gulp.task('sass', function() {
         .pipe(gulp.dest('css'));
 });
 
-gulp.task('fonts', function() {
-    return gulp.src([
-        ])
-        .pipe(gulp.dest('fonts/'));
-});
-
 gulp.task('watch', function() {
     gulp.watch(['scss/**/*.scss'], ['sass']);
 });
-gulp.task('default', ['fonts', 'sass']);
+gulp.task('default', ['sass']);
