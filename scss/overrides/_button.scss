@@ -1,4 +1,8 @@
 .button {
 	font-size: $button-font-size;
 	text-transform: uppercase;
+	&.button_block {
+		width: 100%;
+		border-radius: 5px;
+	}
 }
