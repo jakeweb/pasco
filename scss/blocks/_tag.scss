@@ -1,21 +1,26 @@
 .tag {
 	display: inline-block;
-	min-width: 80px;
-    margin-right: 1em;
-    padding: 0.68em 1.81em 0.56em;
+	
     border: 1px solid transparent;
-    border-radius: 2em;
     color: inherit;
     text-align: center;
-    text-transform: uppercase;
     line-height: 1;
     background-color: $light-gray;
     @include transition();
     &.tag_lg {
+    	min-width: 80px;
+    	padding: 0.68em 1.81em 0.56em;
+    	margin-right: 1em;
     	font-size: 1.14rem;
+    	border-radius: 2em;
+    	text-transform: uppercase;
     }
     &.tag_sm {
+    	margin-right: 10px;
+    	margin-bottom: 10px;
+    	padding: 10px 14px;
     	font-size: 1rem;
+    	border-radius: 5px;
     }
     &.active,
     &:hover {
