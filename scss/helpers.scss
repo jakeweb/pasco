@@ -24,3 +24,16 @@
 .flex-1 {
     flex: 1;
 }
+
+.text-bold {
+    font-weight: bold;
+}
+
+.text-justify {
+    text-align: justify;
+    &:after {
+        content: '';
+        display: inline-block;
+        width: 100%;
+    }
+}

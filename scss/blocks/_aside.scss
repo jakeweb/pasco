@@ -1,6 +1,35 @@
 .aside {
-	height: 1000px;
-	background: $white;
-	max-width: 320px;
-	width: 26.4%;
+    height: 1000px;
+    background: $white;
+    max-width: 320px;
+    width: 26.4%;
+    padding-left: 38px;
+}
+
+.aside-card {
+    margin-bottom: 40px;
+}
+
+.aside-card__title {
+    padding: 0.7em 0;
+    font-size: 1.28rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: $purple;
+    border-bottom: 1px solid lighten($purple, 35%);
+}
+
+.aside-list {
+    list-style: none;
+    color: inherit;
+    margin: 0;
+}
+
+.aside-list__item {
+    padding: 1em;
+    font-family: $font-open-sans;
+    border-bottom: 1px solid $medium-gray;
+    a {
+        color: inherit;
+    }
 }
