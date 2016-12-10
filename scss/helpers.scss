@@ -2,13 +2,25 @@
     text-transform: uppercase;
 }
 
+.text-white {
+    color: $white;
+}
+
 .text-gray {
     color: $medium-gray;
 }
-
 
 .valign-abs {
     position: relative;
     top: 50%;
     transform: translateY(-50%);
+}
+
+.valign-flex {
+    display: flex;
+    align-items: center;
+}
+
+.flex-1 {
+    flex: 1;
 }

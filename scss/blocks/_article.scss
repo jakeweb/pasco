@@ -1,0 +1,131 @@
+// shadow parameters
+$top: 0;
+$left: -106px;
+$blur: 71px;
+$spread: -58px;
+$color: #000;
+$inset: true;
+$poster-horizontal-width: 32%;
+.articles {
+    width: 100%;
+    max-width: 821px;
+}
+.article {
+    margin-bottom: 20px;
+    border: 1px solid $light-gray;
+    border-radius: 5px;
+    background: $white;
+    overflow: hidden;
+    &.article_horizontal {
+        display: flex;
+        .article__poster {
+            display: flex;
+            flex-direction: column;
+            width: $poster-horizontal-width;
+            min-width: 265px;
+            img {
+                object-fit: cover;
+                flex-grow: 1;
+                height: auto;
+            }
+        }
+        .article-text-wrapper {
+            width: 100%-$poster-horizontal-width;
+        }
+        .article__body,
+        .article__footer {
+            padding: $default-padding*0.5 $default-padding;
+        }
+    }
+    &.article_sm {
+        .article__poster {
+            height: 160px;
+        }
+        .article__body {
+            .h1 {
+                font-size: 14px;
+            }
+        }
+    }
+    &.article_md {
+        .article__poster {
+            height: 300px;
+        }
+        .article__body {
+            .h1 {
+                font-size: 16px;
+            }
+        }
+    }
+    &.article_lg {
+        .article__poster {
+            height: 420px;
+        }
+    }
+}
+
+.article__poster {
+    position: relative;
+    img {
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+    }
+    &:after {
+        //shadow
+        @include box-shadow($top, $left, $blur, $spread, $color, $inset);
+        display: block;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0.5;
+        content: "";
+        z-index: 1;
+    }
+    .caption {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        background: transparent;
+    }
+}
+
+.article__body {
+    font-family: $poster-font-family;
+    padding: $default-padding;
+    .h1 {
+        font-size: 18px;
+        font-weight: bold;
+    }
+}
+
+.article__footer {
+    display: flex;
+    align-items: center;
+    padding: 17px;
+    border-top: 1px solid $light-gray;
+}
+
+.share {
+    &:after {
+        font-family: "FontAwesome";
+        font-size: 21px;
+        content: "\f142";
+        color: #000;
+    }
+}
+
+.article__feedback {
+    float: right;
+    .icon-group:not(:last-child) {
+        margin-right: 20px;
+    }
+    .icon {
+        padding: 0 5px;
+    }
+}
+
+.article__tag {
+    float: left;
+}

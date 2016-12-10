@@ -47,7 +47,7 @@
 // ---------
 
 $global-font-size: 14px;
-$global-width: rem-calc(1200);
+$global-width: rem-calc(1170px);
 $global-lineheight: 1.5;
 $foundation-palette: (
   primary: #2199e8,
@@ -64,10 +64,12 @@ $black-light: #191919;
 $pink: #ff4081;
 $white: #fefefe;
 $gray: #777777;
-$body-background: $white;
+$purple: #3f51b5;
+$body-background: #f5f5f5;
 $body-font-color: $black;
 // $body-font-family: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
 $body-font-family: 'Montserrat', Helvetica, Roboto, Arial, sans-serif;
+$poster-font-family: 'OpenSans', Helvetica, Roboto, Arial, sans-serif;
 $body-antialiased: true;
 $global-margin: 1rem;
 $global-padding: 1rem;
@@ -77,6 +79,7 @@ $global-radius: 0;
 $global-text-direction: ltr;
 $global-flexbox: false;
 $print-transparent-backgrounds: true;
+$default-padding: 20px;
 
 @include add-foundation-colors;
 
@@ -99,7 +102,7 @@ $grid-row-width: $global-width;
 $grid-column-count: 12;
 $grid-column-gutter: (
   small: 20px,
-  medium: 30px,
+  medium: 10px,
 );
 $grid-column-align-edge: true;
 $block-grid-max: 8;
@@ -587,5 +590,4 @@ $topbar-unstack-breakpoint: medium;
 $slick-font-family: "FontAwesome";
 $slick-prev-character: "\f104";
 $slick-next-character: "\f105";
-$stick-caption-bg: rgba(33,33,33,0.75);
-// $stick-caption-bg: transparent;
+$caption_bg-grey: rgba(33,33,33,0.75);

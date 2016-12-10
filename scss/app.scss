@@ -49,13 +49,19 @@
 @include motion-ui-transitions;
 @include motion-ui-animations;
 
+@import 'fonts';
 @import 'helpers';
+@import '_mixins';
 @import 'overrides/_menu';
 @import 'overrides/_dropdown-menu';
 @import 'overrides/_button';
 
+
 @import 'blocks/_header';
+@import 'blocks/_caption';
+@import 'blocks/_article';
 @import 'blocks/_author';
+@import 'blocks/_aside';
 
 // Slick slider
 @import 'bower_components/slick-carousel/slick/slick-theme.scss';

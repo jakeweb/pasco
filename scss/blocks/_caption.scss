@@ -1,0 +1,17 @@
+.caption {
+	position: absolute;
+	width: 100%;
+	padding: 0 $default-padding;
+	z-index: 10;
+	&.caption_bottom {
+		bottom: 0;
+	}
+	&.caption_full-height {
+		height: 100%;
+		top: 0;
+		left: 0;
+	}
+	&.caption_bg-grey {
+		background: $caption_bg-grey;
+	}
+}
