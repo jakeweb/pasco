@@ -1,12 +1,19 @@
 @mixin box-shadow($top: 0, $left: 0, $blur: 25px, $spread: 0, $color: #000, $inset: false) {
     @if $inset {
-        -webkit-box-shadow: inset $top $left $blur $spread $color; 
+        -webkit-box-shadow: inset $top $left $blur $spread $color;
         -moz-box-shadow: inset $top $left $blur $spread $color;
         box-shadow: inset $top $left $blur $spread $color;
     }
     @else {
-        -webkit-box-shadow: $top $left $blur $spread $color; 
+        -webkit-box-shadow: $top $left $blur $spread $color;
         -moz-box-shadow: $top $left $blur $spread $color;
         box-shadow: $top $left $blur $spread $color;
     }
+}
+
+@mixin transition($property: all, $duration: 0.5s, $timing: ease-out) {
+    -moz-transition: $property $duration $timing;
+    -o-transition: $property $duration $timing;
+    -webkit-transition: $property $duration $timing;
+    transition: $property $duration $timing;
 }
