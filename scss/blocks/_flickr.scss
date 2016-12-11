@@ -1,0 +1,9 @@
+.flickr {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.flickr__img {
+    margin-bottom: 7px;
+}
