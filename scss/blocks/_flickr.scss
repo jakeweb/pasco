@@ -1,9 +1,18 @@
 .flickr {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .flickr__img {
+    width: 30%;
+    height: 100%;
     margin-bottom: 7px;
+    @media screen and (max-width: $breakpoint-sm) {
+        width: 40%;
+        margin-bottom: 18px;
+        &:nth-child(2n+1) {
+            display: none;
+        }
+    }
 }

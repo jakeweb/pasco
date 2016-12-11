@@ -1,0 +1,9 @@
+a {
+    @include transition();
+}
+
+p {
+    @media screen and (max-width: $breakpoint-sm) {
+        margin-bottom: 5px;
+    }
+}

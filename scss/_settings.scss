@@ -58,20 +58,16 @@ $foundation-palette: (
   warning: #ffae00,
   alert: #ec5840,
 );
-
-$light-gray: #f5f5f5;
-// $medium-gray: #cacaca;
-$medium-gray: #e0e0e0;
-$dark-gray: #8a8a8a;
+$white: #fefefe;
+$pink: #ff4081;
+$purple: #3f51b5;
+$light-gray: #eeeeee;
+$medium-gray: #909090;
+$dark-gray: #757575;
 $black: #0a0a0a;
 $black-light: rgb(19,19,19);
-$pink: #ff4081;
-$white: #fefefe;
-$gray: #777777;
-$purple: #3f51b5;
-$body-background: #f5f5f5;
+$body-background: $light-gray;
 $body-font-color: $black;
-// $body-font-family: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
 $body-font-family: 'Montserrat', Helvetica, Roboto, Arial, sans-serif;
 $font-open-sans: 'OpenSans';
 $body-antialiased: true;
@@ -86,14 +82,15 @@ $global-flexbox: false;
 $print-transparent-backgrounds: true;
 $default-padding: 20px;
 
+
 @include add-foundation-colors;
 
 // 2. Breakpoints
 // --------------
-
+$breakpoint-sm : 768px;
 $breakpoints: (
   small: 0,
-  medium: 640px,
+  medium: $breakpoint-sm,
   large: 1024px,
   xlarge: 1200px,
   xxlarge: 1440px,
@@ -601,7 +598,7 @@ $slick-prev-character: "\f104";
 $slick-next-character: "\f105";
 $caption_bg-grey: rgba(33,33,33,0.75);
 
-// 37. Icons colors
+// 38. Icons colors
 // ----------------
 $color-fb: #3b5999;
 $color-twitter: #55acee;

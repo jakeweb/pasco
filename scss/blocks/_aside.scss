@@ -1,7 +1,7 @@
 .aside {
     background: $white;
-    max-width: 320px;
     width: 26.4%;
+    max-width: 320px;
     padding-left: 38px;
     .article {
         &.article_horizontal {
@@ -15,8 +15,25 @@
                 font-size: 1rem;
             }
         }
-        .article__feedback {
-            color: $purple;
+    }
+    @media screen and (max-width: $breakpoint-sm) {
+        width: 100%;
+        max-width: 100%;
+        background: $black-light;
+        color: $medium-gray;
+        .aside-card__title {
+            color: $light-gray;
+            border-bottom: none;
+        }
+        .tag {
+            border-color: $light-gray;
+            background: transparent;
+            &.active,
+            &:hover {
+                color: $white;
+                border-color: $light-gray;
+                background-color: $dark-gray;
+            }
         }
     }
 }

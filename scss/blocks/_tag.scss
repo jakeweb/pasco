@@ -1,12 +1,10 @@
 .tag {
 	display: inline-block;
-	
     border: 1px solid transparent;
     color: inherit;
     text-align: center;
     line-height: 1;
     background-color: $light-gray;
-    @include transition();
     &.tag_lg {
     	min-width: 80px;
     	padding: 0.68em 1.81em 0.56em;

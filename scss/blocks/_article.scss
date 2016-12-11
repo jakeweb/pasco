@@ -5,10 +5,15 @@ $blur: 71px;
 $spread: -58px;
 $color: #000;
 $inset: true;
+// -- shadow parameters
 $poster-horizontal-width: 32%;
+$article-border: darken($light-gray, 10%);
 .articles {
     width: 70%;
     max-width: 821px;
+    @media screen and (max-width: $breakpoint-sm) {
+        width: 100%;
+    }
 }
 
 .article {
@@ -34,14 +39,38 @@ $poster-horizontal-width: 32%;
         .article__footer {
             padding: $default-padding*0.5 $default-padding;
         }
+        @media screen and (max-width: $breakpoint-sm) {
+            .article__poster {
+                min-width: 130px;
+            }
+            .article__text,
+            .author__avatar {
+                display: none;
+            }
+        }
     }
-    &.article_sm {
+    &.article_sm,
+    &.article_xs {
         .article__poster {
             height: 160px;
         }
         .article__body {
             .h1 {
-                font-size: 14px;
+                font-size: 1rem;
+            }
+        }
+        @media screen and (max-width: $breakpoint-sm) {
+            .article__text,
+            .author__avatar {
+                display: none;
+            }
+        }
+    }
+    &.article_xs {
+        @media screen and (max-width: $breakpoint-sm) {
+            .article__body, 
+            .article__footer {
+                display: none;
             }
         }
     }
@@ -51,7 +80,13 @@ $poster-horizontal-width: 32%;
         }
         .article__body {
             .h1 {
-                font-size: 16px;
+                font-size: 1.14rem;
+            }
+        }
+        @media screen and (max-width: $breakpoint-sm) {
+            .article__body,
+            .article__footer {
+                display: none;
             }
         }
     }
@@ -61,7 +96,7 @@ $poster-horizontal-width: 32%;
         }
     }
     &.article_bordered {
-        border: 1px solid $medium-gray;
+        border: 1px solid $article-border;
         border-radius: $border-radius;
         overflow: hidden;
     }
@@ -99,16 +134,26 @@ $poster-horizontal-width: 32%;
     font-family: $font-open-sans;
     padding: $default-padding;
     .h1 {
-        font-size: 18px;
+        font-size: 1.28rem;
         font-weight: bold;
+        margin-bottom: 0;
+    }
+    @media screen and (max-width: $breakpoint-sm) {
+        .h1 {
+            font-size: 1rem;
+        }
+        padding: $default-padding/2;
     }
 }
 
 .article__footer {
     display: flex;
     align-items: center;
-    padding: 17px;
-    border-top: 1px solid $medium-gray;
+    padding: $default-padding;
+    border-top: 1px solid $article-border;
+    @media screen and (max-width: $breakpoint-sm) {
+        padding: $default-padding/2;
+    }
 }
 
 .share {
@@ -117,15 +162,5 @@ $poster-horizontal-width: 32%;
         font-size: 21px;
         content: "\f142";
         color: #000;
-    }
-}
-
-.article__feedback {
-    float: right;
-    .icon-group:not(:last-child) {
-        margin-right: 20px;
-    }
-    .icon {
-        padding: 0 5px;
     }
 }
