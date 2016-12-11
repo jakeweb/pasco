@@ -1,0 +1,34 @@
+.icon {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0.3em 1em;
+    font-size: 1em;
+    &.icon_bordered:not(:first-child) {
+        border-left: 1px solid #5c5c5b;
+    }
+    &.icon_circle {
+        padding: 0;
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        text-align: center;
+        &.icon_vk {
+            background: $color-vk;
+        }
+        &.icon_fb {
+            background: $color-fb;
+        }
+        &.icon_twitter {
+            background: $color-twitter;
+        }
+        &.icon_pinterest {
+            background: $color-pinterest;
+        }
+        &.icon_dribbble {
+            background: $color-dribbble;
+        }
+        &.icon_tumblr {
+            background: $color-tumblr;
+        }
+    }
+}

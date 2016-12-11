@@ -10,7 +10,7 @@
     color: $medium-gray;
 }
 
-.valign-abs {
+.valign {
     position: relative;
     top: 50%;
     transform: translateY(-50%);
@@ -35,5 +35,28 @@
         content: '';
         display: inline-block;
         width: 100%;
+    }
+}
+
+.text-divider {
+	position: relative;
+    margin: 20px 0;
+    text-align: center;
+    overflow: hidden;
+    &:after,
+    &:before {
+        display: block;
+        position: absolute;
+        bottom: 50%;
+        width: 50%;
+        height: 1px;
+        background: $dark-gray;
+        content: "";
+    }
+    &:after {
+    	right: -15px;
+    }
+    &:before {
+    	left: -15px;
     }
 }

@@ -40,6 +40,7 @@
 //  35. Tooltip
 //  36. Top Bar
 //  37. Slick slider
+//  38. Icons colors
 
 @import 'util/util';
 
@@ -531,15 +532,16 @@ $show-header-for-stacked: false;
 
 $tab-margin: 0;
 $tab-background: $white;
-$tab-background-active: $light-gray;
+$tab-background-active: $purple;
 $tab-item-font-size: rem-calc(12);
 $tab-item-background-hover: $white;
-$tab-item-padding: 1.25rem 1.5rem;
-$tab-expand-max: 6;
+// $tab-item-padding: 1.25rem 1.5rem;
+$tab-item-padding: 1.25rem 0;
+$tab-expand-max: 2;
 $tab-content-background: $white;
-$tab-content-border: $light-gray;
-$tab-content-color: foreground($tab-background, $primary-color);
-$tab-content-padding: 1rem;
+// $tab-content-border: $purple;
+$tab-content-color: foreground($tab-background, $purple);
+$tab-content-padding: 1rem 0;
 
 // 33. Thumbnail
 // -------------
@@ -593,3 +595,12 @@ $slick-font-family: "FontAwesome";
 $slick-prev-character: "\f104";
 $slick-next-character: "\f105";
 $caption_bg-grey: rgba(33,33,33,0.75);
+
+// 37. Icons colors
+// ----------------
+$color-fb: #3b5999;
+$color-twitter: #55acee;
+$color-vk: #4c75a3;
+$color-pinterest: #ff2e56;
+$color-dribbble: #ea4c89;
+$color-tumblr: #34465d;

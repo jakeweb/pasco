@@ -1,0 +1,18 @@
+.tabs {
+    border-radius: 5px;
+    border: 1px solid $purple;
+    .tabs-title {
+    	width: 50%;
+    	border-radius: 5px;
+    	text-transform: uppercase;
+    	text-align: center;
+        a {
+            color: $purple;
+        }
+        &.is-active {
+            a {
+                color: $white;
+            }
+        }
+    }
+}

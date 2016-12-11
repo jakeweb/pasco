@@ -35,13 +35,3 @@
     color: $white;
     text-transform: uppercase;
 }
-
-.icon {
-    display: inline-block;
-    vertical-align: middle;
-    padding: 0.3em 1em;
-    font-size: 1em;
-    &.icon_bordered:not(:first-child) {
-        border-left: 1px solid #5c5c5b;
-    }
-}

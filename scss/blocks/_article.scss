@@ -92,6 +92,7 @@ $poster-horizontal-width: 32%;
 }
 
 .article__body {
+    position: relative;
     font-family: $font-open-sans;
     padding: $default-padding;
     .h1 {
