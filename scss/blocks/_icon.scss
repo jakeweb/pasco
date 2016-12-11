@@ -3,11 +3,12 @@
     vertical-align: middle;
     padding: 0.3em;
     font-size: 1rem;
-    &.icon_bordered:not(:first-child) {
+    &.icon_bordered {
         padding-left: 1em;
         padding-right: 1em;
-        border-left: 1px solid #5c5c5b;
-
+        &:not(:first-child) {
+            border-left: 1px solid #5c5c5b;
+        }
     }
     &.icon_circle {
         padding: 0;

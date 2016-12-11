@@ -3,6 +3,6 @@
 	text-transform: uppercase;
 	&.button_block {
 		width: 100%;
-		border-radius: 5px;
+		border-radius: $border-radius;
 	}
 }

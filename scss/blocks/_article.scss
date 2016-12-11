@@ -13,7 +13,7 @@ $poster-horizontal-width: 32%;
 .article {
     margin-bottom: 20px;
     border: 1px solid $medium-gray;
-    border-radius: 5px;
+    border-radius: $border-radius;
     background: $white;
     overflow: hidden;
     &.article_horizontal {
@@ -22,7 +22,7 @@ $poster-horizontal-width: 32%;
             display: flex;
             flex-direction: column;
             width: $poster-horizontal-width;
-            min-width: 265px;
+            min-width: 260px;
             img {
                 object-fit: cover;
                 flex-grow: 1;

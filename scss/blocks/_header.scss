@@ -1,10 +1,11 @@
 .header {
     position: relative;
     &.header_top {
-    	color: $gray;
+        color: $gray;
         background: $black-light;
         padding: 0.78rem 0;
         font-size: 1.2em;
+        text-transform: uppercase;
         a {
             color: $gray;
             &:hover {

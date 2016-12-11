@@ -49,33 +49,14 @@
 @include motion-ui-transitions;
 @include motion-ui-animations;
 
-@import 'fonts';
-
-@import '_mixins';
-@import 'helpers';
-@import 'overrides/_menu';
-@import 'overrides/_dropdown-menu';
-@import 'overrides/_button';
-@import 'overrides/_tabs';
-@import 'overrides/_accordion';
-@import 'overrides/_form';
-
-@import 'blocks/_icon';
-@import 'blocks/_sort';
-@import 'blocks/_tag';
-@import 'blocks/_header';
-@import 'blocks/_caption';
-@import 'blocks/_article';
-@import 'blocks/_author';
-@import 'blocks/_aside';
-@import 'blocks/_subscribe';
-@import 'blocks/_instagram-widget';
-@import 'blocks/_twitter-post';
-@import 'blocks/_flickr';
-
-@import 'blocks/_footer';
-
 // Slick slider
 @import 'bower_components/slick-carousel/slick/slick-theme.scss';
 @import 'bower_components/slick-carousel/slick/slick.scss';
-@import 'overrides/_slick';
+
+@import '_fonts';
+
+@import '_mixins';
+@import '_helpers';
+
+@import 'overrides/*';
+@import 'blocks/*';
