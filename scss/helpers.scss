@@ -1,3 +1,7 @@
+.no-pad {
+    padding: 0!important;
+}
+
 .text-uppercase {
     text-transform: uppercase;
 }
@@ -39,7 +43,7 @@
 }
 
 .text-divider {
-	position: relative;
+    position: relative;
     margin: 20px 0;
     text-align: center;
     overflow: hidden;
@@ -54,9 +58,9 @@
         content: "";
     }
     &:after {
-    	right: -15px;
+        right: -15px;
     }
     &:before {
-    	left: -15px;
+        left: -15px;
     }
 }
