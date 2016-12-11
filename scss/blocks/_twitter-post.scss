@@ -1,0 +1,25 @@
+.twitter-post:not(:last-child) {
+    padding: 16px 0;
+    border-bottom: $hr-border;
+    
+    .icon {
+        color: $color-twitter;
+        padding: 0 14px 0 0;
+    }
+    a {
+    	color: $dark-gray;
+    	text-decoration: underline;
+    	&:hover {
+    		text-decoration: none;
+    	}
+    }
+}
+
+.twitter-post__text {
+    color: $dark-gray;
+}
+
+.twitter-post__footer {
+    font-size: 0.85rem;
+    color: $dark-gray;
+}
