@@ -1,6 +1,12 @@
 .no-pad {
     padding: 0!important;
 }
+a {
+    @include transition();
+}
+.text-bold {
+    font-weight: bold;
+}
 
 .text-uppercase {
     text-transform: uppercase;
@@ -24,14 +30,6 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-}
-
-.flex-1 {
-    flex: 1;
-}
-
-.text-bold {
-    font-weight: bold;
 }
 
 .justifier {
@@ -70,26 +68,4 @@
     &:before {
         left: -15px;
     }
-}
-
-::-webkit-input-placeholder {
-    /* WebKit, Blink, Edge */
-    color: #909;
-}
-
-:-moz-placeholder {
-    /* Mozilla Firefox 4 to 18 */
-    color: #909;
-    opacity: 1;
-}
-
-::-moz-placeholder {
-    /* Mozilla Firefox 19+ */
-    color: #909;
-    opacity: 1;
-}
-
-:-ms-input-placeholder {
-    /* Internet Explorer 10-11 */
-    color: #909;
 }

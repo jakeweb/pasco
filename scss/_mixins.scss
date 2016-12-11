@@ -11,7 +11,7 @@
     }
 }
 
-@mixin transition($property: all, $duration: 0.5s, $timing: ease-out) {
+@mixin transition($property: all, $duration: 0.3s, $timing: ease-out) {
     -moz-transition: $property $duration $timing;
     -o-transition: $property $duration $timing;
     -webkit-transition: $property $duration $timing;

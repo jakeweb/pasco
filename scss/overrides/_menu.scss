@@ -9,7 +9,6 @@
 .menu__item {
     text-transform: uppercase;
     a {
-        @include transition(all, 0.3s, ease-out);
         display: inline-block;
         color: $white;
         &:hover {
@@ -22,7 +21,6 @@
 }
 
 .logo {
-    @include transition(all, 0.5s, ease-out);
     font-size: 1.71rem;
     font-weight: bold;
     color: $white;

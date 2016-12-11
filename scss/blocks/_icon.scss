@@ -1,10 +1,13 @@
 .icon {
     display: inline-block;
     vertical-align: middle;
-    padding: 0.3em 1em;
-    font-size: 1em;
+    padding: 0.3em;
+    font-size: 1rem;
     &.icon_bordered:not(:first-child) {
+        padding-left: 1em;
+        padding-right: 1em;
         border-left: 1px solid #5c5c5b;
+
     }
     &.icon_circle {
         padding: 0;
