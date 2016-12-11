@@ -23,20 +23,14 @@
 
 .subscribe__form {
     display: inline-block;
-    input {
+    .input {
         display: inline-block;
         width: auto;
         margin-right: 35px;
         padding: $button-padding;
         border-radius: $button-radius;
         font-size: $button-font-size;
-        color: $dark-gray;
-        border-color: $dark-gray;
         height: 2.5em;
-        background: transparent;
         vertical-align: middle;
-        &:focus {
-            background: transparent;
-        }
     }
 }

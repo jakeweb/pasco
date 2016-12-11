@@ -592,9 +592,9 @@
                 </p>
                 <form>
                     <p>Name</p>
-                    <input type="text" placeholder="Igor Ten">
+                    <input class="input" type="text" placeholder="Igor Ten">
                     <p>Email</p>
-                    <input type="email" placeholder="email@address.com">
+                    <input class="input" type="email" placeholder="email@address.com">
                     <button type="input" class="button button_block">Subscribe</button>
                 </form>
                 <p class="text-divider">
@@ -684,14 +684,15 @@
         <div class="subscribe">
             <div class="row">
                 <span class="h1">Subscribe to our newsletter</span>
-                <form class="subscribe__form float-right">
-                    <input type="email" value="Email Address">
+                <form class="form subscribe__form float-right">
+                    <input class="input" type="email" value="Email Address">
                     <button class="button" type="submit">Subscribe</button>
                 </form>
             </div>
             <div class="subscribe__bg-image"></div>
         </div>
         <div class="row">
+            <!-- Pages widget -->
             <div class="column medium-3">
                 <p class="h2 text-uppercase">Pages widget</p>
                 <ul class="accordion" data-accordion>
@@ -727,9 +728,24 @@
                     </li>
                 </ul>
             </div>
-            <div class="column medium-3"></div>
-            <div class="column medium-3"></div>
-            <div class="column medium-3"></div>
+            <!-- Twitter widget -->
+            <div class="column medium-3">
+                <p class="h2 text-uppercase">Pages widget</p>
+            </div>
+            <!-- Flickr widget -->
+            <div class="column medium-3">
+                <p class="h2 text-uppercase">Pages widget</p>
+            </div>
+            <!-- News letter -->
+            <div class="column medium-3">
+                <p class="h2 text-uppercase">Pages widget</p>
+                <form class="form">
+                    <input class="input" type="text" placeholder="Name">
+                    <input class="input" type="email" placeholder="Email Address">
+                    <textarea class="input" placeholder="message"></textarea>
+                    <button class="button button_block secondary">Subscribe</button>
+                </form>
+            </div>
         </div>
     </footer>
     <script src="bower_components/jquery/dist/jquery.js"></script>

@@ -52,7 +52,7 @@ $global-width: rem-calc(1170px);
 $global-lineheight: 1;
 $foundation-palette: (
   primary: #2199e8,
-  secondary: #777,
+  secondary: #303030,
   success: #3adb76,
   warning: #ffae00,
   alert: #ec5840,
@@ -360,11 +360,11 @@ $select-background: $white;
 $select-triangle-color: $dark-gray;
 $select-radius: $global-radius;
 $input-color: $black;
-$input-placeholder-color: $medium-gray;
+$input-placeholder-color: $dark-gray;
 $input-font-family: inherit;
 $input-font-size: rem-calc(16);
-$input-background: $white;
-$input-background-focus: $white;
+$input-background: transparent;
+$input-background-focus: transparent;
 $input-background-disabled: $light-gray;
 $input-border: 1px solid $medium-gray;
 $input-border-focus: 1px solid $dark-gray;

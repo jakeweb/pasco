@@ -1,7 +1,14 @@
 .footer {
-	background: $black-light;
-	.h2 {
-		font-size: 1.28rem;
-		color: $white;
-	}
+    background: $black-light;
+    .h2 {
+        font-size: 1.28rem;
+        color: $white;
+    }
+    .form {
+        .input {
+            color: $dark-gray;
+            border-color: $light-gray;
+            margin-bottom: 9px;
+        }
+    }
 }
