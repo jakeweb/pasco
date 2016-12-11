@@ -1,0 +1,42 @@
+.subscribe {
+    position: relative;
+    padding: 75px 0;
+    background-color: rgba($black-light, 0.75);
+    color: $white;
+    .h1 {
+        font-size: 42px;
+        font-weight: bold;
+    }
+}
+
+.subscribe__bg-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background-image: url(../images/forrest.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.subscribe__form {
+    display: inline-block;
+    input {
+        display: inline-block;
+        width: auto;
+        margin-right: 35px;
+        padding: $button-padding;
+        border-radius: $button-radius;
+        font-size: $button-font-size;
+        color: $dark-gray;
+        border-color: $dark-gray;
+        height: 2.5em;
+        background: transparent;
+        vertical-align: middle;
+        &:focus {
+            background: transparent;
+        }
+    }
+}
