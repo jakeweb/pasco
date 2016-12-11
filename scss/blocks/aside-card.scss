@@ -1,0 +1,12 @@
+.aside-card {
+    margin-bottom: 40px;
+}
+
+.aside-card__title {
+    padding: 0.7em 0;
+    font-size: 1.28rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: $purple;
+    border-bottom: 1px solid lighten($purple, 25%);
+}

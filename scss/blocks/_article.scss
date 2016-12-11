@@ -10,12 +10,10 @@ $poster-horizontal-width: 32%;
     width: 70%;
     max-width: 821px;
 }
+
 .article {
     margin-bottom: 20px;
-    border: 1px solid $medium-gray;
-    border-radius: $border-radius;
     background: $white;
-    overflow: hidden;
     &.article_horizontal {
         display: flex;
         .article__poster {
@@ -61,6 +59,11 @@ $poster-horizontal-width: 32%;
         .article__poster {
             height: 420px;
         }
+    }
+    &.article_bordered {
+        border: 1px solid $medium-gray;
+        border-radius: $border-radius;
+        overflow: hidden;
     }
 }
 
@@ -125,8 +128,4 @@ $poster-horizontal-width: 32%;
     .icon {
         padding: 0 5px;
     }
-}
-
-.article__tag {
-    float: left;
 }

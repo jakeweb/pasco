@@ -3,50 +3,20 @@
     max-width: 320px;
     width: 26.4%;
     padding-left: 38px;
-}
-
-.aside-card {
-    margin-bottom: 40px;
-    .article_aside {
-        border: none;
-        border-radius: 0;
-        padding-bottom: 20px;
-        border-bottom: 1px solid $medium-gray;
+    .article {
         &.article_horizontal {
             .article__poster {
                 min-width: 100px;
             }
         }
         .article__body {
-            padding-bottom: 0;
-            padding-top: 0;
+            padding: 0 0 0 16px;
             .h1 {
-                font-size: 14px;
+                font-size: 1rem;
             }
         }
-    }
-}
-
-.aside-card__title {
-    padding: 0.7em 0;
-    font-size: 1.28rem;
-    font-weight: bold;
-    text-transform: uppercase;
-    color: $purple;
-    border-bottom: 1px solid lighten($purple, 25%);
-}
-
-.aside-list {
-    list-style: none;
-    color: inherit;
-    margin: 0;
-}
-
-.aside-list__item {
-    padding: 1em 1em 1em 0;
-    font-family: $font-open-sans;
-    border-bottom: 1px solid $medium-gray;
-    a {
-        color: inherit;
+        .article__feedback {
+            color: $purple;
+        }
     }
 }

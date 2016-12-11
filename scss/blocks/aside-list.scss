@@ -1,0 +1,14 @@
+.aside-list {
+    list-style: none;
+    color: inherit;
+    margin: 0;
+}
+
+.aside-list__item {
+    padding: 1em 1em 1em 0;
+    font-family: $font-open-sans;
+    border-bottom: 1px solid $medium-gray;
+    a {
+        color: inherit;
+    }
+}

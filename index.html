@@ -200,11 +200,11 @@
     <div class="row">
         <section class="articles float-left">
             <!-- Big article -->
-            <article class="article">
+            <article class="article article_bordered">
                 <div class="article__poster">
                     <img src="images/poster_1.jpg" alt="">
                     <div class="caption caption_bottom text-white">
-                        <p class="article__tag">Lifestyle</p>
+                        <p class="float-left">Lifestyle</p>
                         <div class="article__feedback">
                             <span class="icon-group">
                                     <span class="icon">
@@ -239,11 +239,11 @@
                 </div>
             </article>
             <!-- Horizontal article -->
-            <article class="article  article_horizontal">
+            <article class="article article_horizontal article_bordered">
                 <div class="article__poster">
                     <img src="images/poster_2.jpg" alt="">
                     <div class="caption caption_bottom text-white">
-                        <p class="article__tag">Lifestyle</p>
+                        <p class="float-left">Lifestyle</p>
                         <div class="article__feedback">
                             <span class="icon-group">
                                     <span class="icon">
@@ -279,11 +279,11 @@
                     </footer>
                 </div>
             </article>
-            <article class="article  article_horizontal">
+            <article class="article article_horizontal article_bordered">
                 <div class="article__poster">
                     <img src="images/poster_3.jpg" alt="">
                     <div class="caption caption_bottom text-white">
-                        <p class="article__tag">Lifestyle</p>
+                        <p class="float-left">Lifestyle</p>
                         <div class="article__feedback">
                             <span class="icon-group">
                                     <span class="icon">
@@ -319,11 +319,11 @@
                     </footer>
                 </div>
             </article>
-            <article class="article  article_horizontal">
+            <article class="article article_horizontal article_bordered">
                 <div class="article__poster">
                     <img src="images/poster_4.jpg" alt="">
                     <div class="caption caption_bottom text-white">
-                        <p class="article__tag">Lifestyle</p>
+                        <p class="float-left">Lifestyle</p>
                         <div class="article__feedback">
                             <span class="icon-group">
                                     <span class="icon">
@@ -362,11 +362,11 @@
             <!-- Small row -->
             <div class="row">
                 <div class="column medium-4">
-                    <article class="article article_sm">
+                    <article class="article article_sm article_bordered">
                         <div class="article__poster ">
                             <img src="images/poster_5.jpg" alt="">
                             <div class="caption caption_bottom text-white">
-                                <p class="article__tag">Lifestyle</p>
+                                <p class="float-left">Lifestyle</p>
                                 <div class="article__feedback">
                                     <span class="icon-group">
                                     <span class="icon">
@@ -402,11 +402,11 @@
                     </article>
                 </div>
                 <div class="column medium-4">
-                    <article class="article article_sm">
+                    <article class="article article_sm article_bordered">
                         <div class="article__poster ">
                             <img src="images/poster_6.jpg" alt="">
                             <div class="caption caption_bottom text-white">
-                                <p class="article__tag">Lifestyle</p>
+                                <p class="float-left">Lifestyle</p>
                                 <div class="article__feedback">
                                     <span class="icon-group">
                                     <span class="icon">
@@ -442,11 +442,11 @@
                     </article>
                 </div>
                 <div class="column medium-4">
-                    <article class="article article_sm">
+                    <article class="article article_sm article_bordered">
                         <div class="article__poster ">
                             <img src="images/poster_7.jpg" alt="">
                             <div class="caption caption_bottom text-white">
-                                <p class="article__tag">Lifestyle</p>
+                                <p class="float-left">Lifestyle</p>
                                 <div class="article__feedback">
                                     <span class="icon-group">
                                     <span class="icon">
@@ -485,11 +485,11 @@
             <!-- Medium row -->
             <div class="row">
                 <div class="column medium-6">
-                    <article class="article article_md">
+                    <article class="article article_md article_bordered">
                         <div class="article__poster ">
                             <img src="images/poster_8.jpg" alt="">
                             <div class="caption caption_bottom text-white">
-                                <p class="article__tag">Lifestyle</p>
+                                <p class="float-left">Lifestyle</p>
                                 <div class="article__feedback">
                                     <span class="icon-group">
                                     <span class="icon">
@@ -525,11 +525,11 @@
                     </article>
                 </div>
                 <div class="column medium-6">
-                    <article class="article article_md">
+                    <article class="article article_md article_bordered">
                         <div class="article__poster ">
                             <img src="images/poster_9.jpg" alt="">
                             <div class="caption caption_bottom text-white">
-                                <p class="article__tag">Lifestyle</p>
+                                <p class="float-left">Lifestyle</p>
                                 <div class="article__feedback">
                                     <span class="icon-group">
                                     <span class="icon">
@@ -568,6 +568,7 @@
             More <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i>
         </section>
         <aside class="aside float-right">
+            <!-- Categories -->
             <div class="aside-card">
                 <p class="aside-card__title">
                     Categories
@@ -595,6 +596,7 @@
                     </li>
                 </ul>
             </div>
+            <!-- Subscribe -->
             <div class="aside-card">
                 <p class="aside-card__title">
                     Subscribe
@@ -630,6 +632,7 @@
                     </div>
                 </div>
             </div>
+            <!-- Tab post widget -->
             <div class="aside-card">
                 <p class="aside-card__title">
                     Tab Post Widget
@@ -638,15 +641,34 @@
                     <li class="tabs-title is-active"><a href="#panel1" aria-selected="true" role="tab">Recent post</a></li>
                     <li class="tabs-title"><a href="#panel2" role="tab">Popular post</a></li>
                 </ul>
-                <div class="tabs-content" data-tabs-content="example-tabs">
+                <div class="tabs-content aside-list" data-tabs-content="example-tabs">
                     <div class="tabs-panel is-active" id="panel1">
-                        <div class="article article_horizontal article_aside">
+                        <div class="article aside-list__item article_horizontal ">
                             <div class="article__poster">
                                 <img src="images/poster_1.jpg" alt="">
                             </div>
                             <div class="article__body">
                                 <div class="clearfix">
-                                    <p class="article__tag">Lifestyle</p>
+                                    <p class="float-left">April 28, 2016</p>
+                                    <div class="article__feedback">
+                                        <span class="icon-group">
+                                    <span class="icon">
+                                        <i class="material-icons">question_answer</i>
+                                    </span>
+                                        <span>7</span>
+                                        </span>
+                                    </div>
+                                </div>
+                                <p class="h1 clearfix">10 Things To Do To Change Your Life Forever</p>
+                            </div>
+                        </div>
+                        <div class="article aside-list__item article_horizontal">
+                            <div class="article__poster">
+                                <img src="images/poster_1.jpg" alt="">
+                            </div>
+                            <div class="article__body">
+                                <div class="clearfix">
+                                    <p class="float-left">April 28, 2016</p>
                                     <div class="article__feedback">
                                         <span class="icon-group">
                                     <span class="icon">
@@ -659,13 +681,13 @@
                                 <h1 class="h1 clearfix">10 Things To Do To Change Your Life Forever</h1>
                             </div>
                         </div>
-                        <div class="article article_horizontal article_aside">
+                        <div class="article aside-list__item article_horizontal ">
                             <div class="article__poster">
                                 <img src="images/poster_1.jpg" alt="">
                             </div>
                             <div class="article__body">
                                 <div class="clearfix">
-                                    <p class="article__tag">Lifestyle</p>
+                                    <p class="float-left">April 28, 2016</p>
                                     <div class="article__feedback">
                                         <span class="icon-group">
                                     <span class="icon">
@@ -675,37 +697,18 @@
                                         </span>
                                     </div>
                                 </div>
-                                <h1 class="h1 clearfix">10 Things To Do To Change Your Life Forever</h1>
-                            </div>
-                        </div>
-                        <div class="article article_horizontal article_aside">
-                            <div class="article__poster">
-                                <img src="images/poster_1.jpg" alt="">
-                            </div>
-                            <div class="article__body">
-                                <div class="clearfix">
-                                    <p class="article__tag">Lifestyle</p>
-                                    <div class="article__feedback">
-                                        <span class="icon-group">
-                                    <span class="icon">
-                                        <i class="material-icons">question_answer</i>
-                                    </span>
-                                        <span>7</span>
-                                        </span>
-                                    </div>
-                                </div>
-                                <h1 class="h1 clearfix">10 Things To Do To Change Your Life Forever</h1>
+                                <p class="h1 clearfix">10 Things To Do To Change Your Life Forever</p>
                             </div>
                         </div>
                     </div>
                     <div class="tabs-panel" id="panel2">
-                        <div class="article article_horizontal article_aside">
+                        <div class="article aside-list__item article_horizontal ">
                             <div class="article__poster">
                                 <img src="images/poster_1.jpg" alt="">
                             </div>
                             <div class="article__body">
                                 <div class="clearfix">
-                                    <p class="article__tag">Lifestyle</p>
+                                    <p class="float-left">Lifestyle</p>
                                     <div class="article__feedback">
                                         <span class="icon-group">
                                     <span class="icon">
@@ -715,16 +718,16 @@
                                         </span>
                                     </div>
                                 </div>
-                                <h1 class="h1 clearfix">10 Things To Do To Change Your Life Forever</h1>
+                                <p class="h1 clearfix">10 Things To Do To Change Your Life Forever</p>
                             </div>
                         </div>
-                        <div class="article article_horizontal article_aside">
+                        <div class="article aside-list__item article_horizontal ">
                             <div class="article__poster">
                                 <img src="images/poster_1.jpg" alt="">
                             </div>
                             <div class="article__body">
                                 <div class="clearfix">
-                                    <p class="article__tag">Lifestyle</p>
+                                    <p class="float-left">Lifestyle</p>
                                     <div class="article__feedback">
                                         <span class="icon-group">
                                     <span class="icon">
@@ -734,12 +737,13 @@
                                         </span>
                                     </div>
                                 </div>
-                                <h1 class="h1 clearfix">10 Things To Do To Change Your Life Forever</h1>
+                                <p class="h1 clearfix">10 Things To Do To Change Your Life Forever</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <!-- Tags -->
             <div class="aside-card">
                 <p class="aside-card__title">
                     Tags
