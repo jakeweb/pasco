@@ -1,0 +1,26 @@
+.accordion-item {
+    border-radius: 5px;
+    border: $accordion-border;
+}
+.accordion-item:not(:last-child)  {
+	margin-bottom: 5px;
+}
+.accordion-content,
+.accordion-title {
+    border-bottom: $accordion-border;
+}
+
+.accordion-title {
+	@include transition();
+	font-weight: bold;
+	text-transform: uppercase;
+    &:hover,
+    &:focus {
+        background-color: $dark-gray;
+        color: $light-gray;
+    }
+    &:before {
+    	font-size: 1.71rem;
+    	margin-top: -0.85rem;
+    }
+}
