@@ -1,4 +1,6 @@
 .menu {
+    text-transform: uppercase;
+
     &.menu_top {
         position: absolute;
         width: 100%;
@@ -9,10 +11,22 @@
             margin-bottom: 35px;
         }
     }
+    .dropdown.menu  {
+        flex-wrap: wrap;
+        .is-dropdown-submenu {
+            background-color: $purple
+        }
+        
+    }
+    @media screen and (max-width: $breakpoint-sm) {
+        > li {
+            display: block;
+        }
+    }
 }
 
 .menu__item {
-    text-transform: uppercase;
+    
     a {
         display: inline-block;
         color: $white;
@@ -23,6 +37,7 @@
     &.active > a {
         border-bottom: 4px solid $pink;
     }
+
 }
 
 .logo {
