@@ -1,8 +1,15 @@
+.subscribe-wrapper {
+    position: relative;
+    background-image: url(../images/forrest.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 .subscribe {
     position: relative;
     padding: 75px 0;
-    background-color: rgba($black-light, 0.75);
     color: $white;
+    z-index: 2;
     .h1 {
         font-size: 42px;
         font-weight: bold;
@@ -15,10 +22,6 @@
     height: 100%;
     top: 0;
     left: 0;
-    z-index: -1;
-    background-image: url(../images/forrest.png);
-    background-size: cover;
-    background-repeat: no-repeat;
 }
 
 .subscribe__form {
@@ -30,4 +33,14 @@
         height: 2.5em;
         vertical-align: middle;
     }
+}
+
+.subscribe-bg-blur {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba($black-light, 0.75);
+    z-index: 1;
 }
