@@ -1,9 +1,44 @@
-// .form {
-//     .input {
-//         margin: 0 0 0.64rem;
-//     }
-//     &.form_dark {
-//     	color: $dark-gray;
-//         border-color: $dark-gray;
-//     }
-// }
+form,
+.form {
+    &.form_dark {
+        color: $dark-gray;
+        border-color: $dark-gray;
+    }
+}
+
+.input {
+    margin: 0 0 0.64rem;
+    &.input_inline {
+        display: inline-block;
+        width: auto;
+    }
+    &.input_rounded {
+    	padding-left: 1rem;
+        border-radius: $button-radius;
+    }
+}
+
+.input-group {
+    position: relative;
+    border: 1px solid $light-gray;
+    background: $light-gray;
+    .input {
+        margin: 0;
+    }
+    &.input_rounded {
+        border-radius: $button-radius;
+        .input {
+        	padding-left: 1rem;
+            border: none;
+            border-radius: $button-radius;
+        }
+    }
+}
+
+.input-group-label {
+    position: absolute;
+    top: 1px;
+    right: 2px;
+    border: none;
+    background: transparent
+}

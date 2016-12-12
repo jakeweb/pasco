@@ -9,10 +9,11 @@
         color: $white;
     }
     .form {
-        .input {
-            color: $dark-gray;
-            border-color: $light-gray;
-            margin-bottom: 9px;
+        .input,
+        .input-group {
+            color: $medium-gray;
+            border-color: $light-gray;  
+            background: transparent;
         }
     }
 }

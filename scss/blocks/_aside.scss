@@ -2,7 +2,8 @@
     background: $white;
     width: 26.4%;
     max-width: 320px;
-    padding-left: 38px;
+    padding: 25px 0 25px 38px;
+    border-radius: $border-radius;
     .article {
         &.article_horizontal {
             .article__poster {

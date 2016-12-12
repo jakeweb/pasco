@@ -12,6 +12,12 @@
                 color: $white;
             }
         }
+        @media screen and (max-width: $breakpoint-sm) {
+            background: $purple;
+            a {
+                color: $white;
+            }
+        }
     }
     .author {
         margin-bottom: 25px;

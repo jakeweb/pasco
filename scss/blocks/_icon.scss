@@ -16,6 +16,9 @@
         height: 36px;
         border-radius: 50%;
         text-align: center;
+        &.icon_white {
+            background: $white;
+        }
         &.icon_vk {
             background: $color-vk;
         }
@@ -33,6 +36,9 @@
         }
         &.icon_tumblr {
             background: $color-tumblr;
+        }
+        &.icon_more {
+            margin: 35px 0;
         }
     }
 }

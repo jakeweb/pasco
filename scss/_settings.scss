@@ -87,7 +87,7 @@ $default-padding: 20px;
 
 // 2. Breakpoints
 // --------------
-$breakpoint-sm : 768px;
+$breakpoint-sm: 769px;
 $breakpoints: (
   small: 0,
   medium: $breakpoint-sm,
@@ -251,7 +251,7 @@ $button-padding: 0.8em 1.5em;
 $button-margin: 0 0 $global-margin 0;
 $button-fill: solid;
 // $button-background: $primary-color;
-$button-background: #303f9f;
+$button-background: $purple;
 $button-background-hover: scale-color($button-background, $lightness: -15%);
 $button-color: $white;
 $button-color-alt: $black;

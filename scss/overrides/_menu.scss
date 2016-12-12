@@ -3,6 +3,11 @@
         position: absolute;
         width: 100%;
         z-index: 1;
+        @media screen and (max-width: $breakpoint-sm) {
+            position: relative;
+            background-color: lighten($purple, 15%);
+            margin-bottom: 35px;
+        }
     }
 }
 

@@ -1,7 +1,10 @@
 .twitter-post {
     padding: 16px 0;
     border-bottom: $hr-border;
-    
+    &:last-of-type {
+        border-bottom: none;
+        margin-bottom: 35px;
+    }
     .icon {
         color: $color-twitter;
         padding: 0 14px 0 0;

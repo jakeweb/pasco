@@ -17,8 +17,8 @@ $article-border: darken($light-gray, 10%);
 }
 
 .article {
-    margin-bottom: 20px;
     background: $white;
+    margin-bottom: 20px;
     &.article_horizontal {
         display: flex;
         .article__poster {

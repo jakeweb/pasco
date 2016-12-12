@@ -23,12 +23,9 @@
 
 .subscribe__form {
     display: inline-block;
-    .input {
-        display: inline-block;
-        width: auto;
+    .input.input_inline {
         margin-right: 35px;
         padding: $button-padding;
-        border-radius: $button-radius;
         font-size: $button-font-size;
         height: 2.5em;
         vertical-align: middle;
