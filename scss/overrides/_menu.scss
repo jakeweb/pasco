@@ -21,6 +21,7 @@
     @media screen and (max-width: $breakpoint-sm) {
         > li {
             display: block;
+            width: 100%;
         }
     }
 }
