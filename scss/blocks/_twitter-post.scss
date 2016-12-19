@@ -23,6 +23,8 @@
 }
 
 .twitter-post__footer {
+    display: flex;
+    justify-content: space-between;
     font-size: 0.85rem;
     color: $dark-gray;
 }
